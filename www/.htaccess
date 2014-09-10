@@ -1,0 +1,8 @@
+Options -Indexes
+
+php_value register_globals 0
+ErrorDocument 404 /?action=missing
+
+#RewriteEngine on
+#RewriteRule ^([a-zA-Z0-9_-\s]+)$ /?action=$1 [QSA,L]
+#RewriteRule ^([a-zA-Z0-9_-\s]+)/([a-zA-Z0-9_-\s.\/]+)$ /?action=$1&params=$2 [QSA,L]
